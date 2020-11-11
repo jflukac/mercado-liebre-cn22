@@ -1,0 +1,41 @@
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+.nav-lists{
+    width: 50%;
+}
+
+.logo {
+    max-width: 60%;
+    padding-top:7px;
+}
+
+.barra-superior {
+    background-color: #EAC926;
+    background-size: cover;
+    padding-left: 15px;
+}
+
+.barra-superior-header {
+    display: inline-block;
+    max-width: 32%;
+}
+
+.banner{
+    background-size: cover;
+}
+
+.buscador {
+    max-width: 50%;
+    display: inline-block;
+}
+
+.nav-link {
+    display: inline-block;
+    max-width: 15px;
+    padding: 2px;
+}
