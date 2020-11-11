@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MercadoLiebre - Juan Francisco Lukac</title>
+    <link href= '/css/stylesheet.css' rel="stylesheet">
 </head>
 <body>
-    <header><img src = "/images/logo-mercado-liebre.svg", alt = "logo de Mercado Liebre"><input type="search" name="buscador" placeholder="Buscar productos, marcas y más."><input type="submit" value="B"> <p>Comprá en cuotas y sin tarjeta de crédito</p></header>    
-    <nav>
-        <ul>
-            <li><a href="/ofertas">Ofertas</a></li>
-            <li><a href="/tiendas-oficiales">Tiendas Oficiales</a></li>
-            <li><a href="/vender">Vender</a></li>
-            <li><a href="/ayuda"> Ayuda</a></li>
+    <div class="barra-superior">
+    <header class="barra-superior-header">
+        <div class="logo"><a href="/"><img src = "/images/logo-mercado-liebre.svg", alt = "logo de Mercado Liebre"></a></div>
+        <input class="buscador" type="search" name="buscador" placeholder="Buscar productos, marcas y más."><input type="submit" value="B"> 
+        <p>Comprá en cuotas y sin tarjeta de crédito</p>
+    </header>    
+    <nav class="barra-superior">
+        <ul class="nav-lists">
+            <li class="nav-element"><a href="/ofertas" class="nav-link">Ofertas</a></li>
+            <li class="nav-element"><a href="/tiendas-oficiales" class="nav-link">Tiendas Oficiales</a></li>
+            <li class="nav-element"><a href="/vender" class="nav-link">Vender</a></li>
+            <li class="nav-element"><a href="/ayuda" class="nav-link"> Ayuda</a></li>
         </ul>
-        <ul>
-            <li>Creá tu cuenta</li>
-            <li>Ingresá</li>
-            <li>Mis compras</li>
+        <ul class="nav-lists">
+            <li class="nav-link"><a href="/register">Creá tu cuenta</a></li>
+            <li class="nav-link"><a href="/login">Ingresá</a></li>
+            <li class="nav-link"><a href="/carrito">Mis compras</a></li>
         </ul>
     </nav>
-    <img src="/images/img-home-banner.jpg" alt="banner de ofertas">
+    </div>
+    <img class="banner" src="/images/img-home-banner.jpg" alt="banner de ofertas">
     <h2>Basado en tu última visita</h2>
     <div>
         <img src="/images/img-cafetera-moulinex.jpg" alt="Foto cafetera moulinex">
