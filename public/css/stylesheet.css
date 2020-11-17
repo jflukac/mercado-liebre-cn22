@@ -1,3 +1,8 @@
+main.principal {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
 ul li {
     list-style-type: none;
 }
@@ -5,12 +10,14 @@ a {
     text-decoration: none;
 }
 
+
+
 .nav-lists{
     width: 50%;
 }
 
 .logo {
-    max-width: 60%;
+    max-width: 50%;
     padding-top:7px;
 }
 
@@ -20,13 +27,39 @@ a {
     padding-left: 15px;
 }
 
-.barra-superior-header {
+.boton-menu{
+    text-align: center;
+}
+
+.boton-menu {
     display: inline-block;
-    max-width: 32%;
+    color: white;
+    text-align: center;
+    text-shadow: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    background-color: #0044aa;
+    padding: 10px;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.boton-menu:hover {
+    background-color: #0022aa;
+    cursor: pointer;
+}
+
+.barra-navegacion{
+    display: none;
 }
 
 .banner{
-    background-size: cover;
+    width: 100%;
+    display: inline-block;
 }
 
 .buscador {
@@ -38,4 +71,51 @@ a {
     display: inline-block;
     max-width: 15px;
     padding: 2px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    width: 90%;
+    margin: 20px 0px;
+    color: #666;
+}
+.ultima-visita{
+    display: flex;
+    flex-wrap: wrap;
+}
+.descuento {
+    color: green;
+    font-size: 90%;
+}
+article {
+    background-color: white;
+}
+.box-producto {
+    border: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.box-producto:nth-child(1) {
+    margin: 0px 0px 20px 0px;
+}
+
+.box-producto a img {
+    width: 100%;
+}
+
+.nombre-producto {
+    color: #666;
+}
+
+.ofertas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pie-de-pagina {
+    padding: 20px 5%;
+    background-color: white;
+    color: #666;
 }
