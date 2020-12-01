@@ -1,5 +1,7 @@
-main.principal {
-    background-color: #ebebeb;
+body {
+    margin: 0;
+}
+* {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -10,119 +12,165 @@ a {
     text-decoration: none;
 }
 
-
-
+/* diseño header  */
+.barra-superior-logo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .nav-lists{
     width: 50%;
 }
-
 .logo {
-    max-width: 50%;
-    padding-top:7px;
+    width: 50%;
+    display: inline-block;
 }
-
 .barra-superior {
     background-color: #EAC926;
     background-size: cover;
-    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 .boton-menu {
     display: inline-block;
     color: white;
     text-align: center;
     text-shadow: 20px;
     border-radius: 5px;
-    margin: 20px 0px;
+    margin: 20px 0;
     background-color: #0044aa;
     padding: 10px;
+    width: 40px;
+    height: 40px;
 }
-
 .boton-menu:hover {
     background-color: #0022aa;
     cursor: pointer;
 }
-
 .barra-navegacion{
     display: none;
 }
-
-.banner{
-    width: 100%;
-    display: inline-block;
-}
-
 .buscador {
-    max-width: 50%;
-    display: inline-block;
+    background-color: #ffffff;
+    border: none;
 }
-
+.contenedor-buscador {
+    background-color: #ffffff;
+    padding: 5px;
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.buscador-boton {
+    width: fit-content;
+    border: none;
+    background-color: #ffffff;
+    padding: 0;
+}
 .nav-link {
     display: inline-block;
     max-width: 15px;
     padding: 2px;
 }
+/* fin heade  */
 
-.titulo-seccion {
-    text-align: center;
-    width: 90%;
-    margin: 20px 0px;
-    color: #666;
+/* Diseño banner  */
+.banner{
+    width: 100%;
+    display: inline-block;
 }
-.ultima-visita{
+/* fin banner  */
+
+/* Diseño basado en tu ultima visita y ofertas */
+.principal {
+    background-color: #ebebeb;
+}
+.titulo-seccion {
+    font-size: 18px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.ultima-visita {
+    color: #666;
+    background-color: #ebebeb;
+}
+.productos {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.producto-imagen {
+    width: 90%;
+}
+.box-producto-imagen {
+    border-bottom: solid 1px #ebebeb;
+    text-align: center;
+}
+.box-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 5px;
+    position: relative;
+}
+.producto-precio {
+    color: #000000;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+.fast-shipment {
+    color: green;
+    border: solid 1px green;
+    padding: 5px;
+    border-radius: 15px;
+    width: fit-content;
+    position: absolute;
+    bottom: 25px;
+    left: 80%;
 }
 .descuento {
     color: green;
+    width: 70%;
+    display: inline-block;
     font-size: 90%;
 }
-article {
-    background-color: white;
-}
-.box-producto {
-    border: 4px;
-    margin: 20px;
-    box-sizing: border-box;
-    padding: 15px;
-}
-
-.box-producto:nth-child(1) {
-    margin: 0px 0px 20px 0px;
-}
-
-.box-producto a img {
-    width: 100%;
-}
-
 .nombre-producto {
+    display: none;
     color: #666;
 }
+/* fin ultima visita  */
 
-.ofertas {
-    display: flex;
-    flex-wrap: wrap;
-}
-
+/* diseño footer  */
 .pie-de-pagina {
-    padding: 20px 5%;
-    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    text-align: center;
     color: #666;
 }
-
-.titulos-h4 {
-    font-size: 24px;
-    text-transform: uppercase;
+.pie-articulo {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-
-p {
+.pie-articulo-icono {
+    color: blue;
+}
+.copyright {
     font-size: 12px;
-    color: #666;
+
 }
-.contenedor-buscador {
-    display: flex;
-    flex-direction: column;
-}
-.buscador-boton {
-    width: fit-content;
-}
+/* fin footer  */
