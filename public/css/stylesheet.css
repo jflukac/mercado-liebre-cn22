@@ -14,16 +14,17 @@ a {
 
 /* diseño header  */
 .barra-superior-logo {
-    width: 100%;
+    width: 90%;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 .nav-lists{
     width: 50%;
 }
 .logo {
-    width: 50%;
+    width: 40%;
     display: inline-block;
 }
 .barra-superior {
@@ -32,6 +33,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.compra-en-cuotas {
+    font-size: .8em;
+    text-align: center;
 }
 .boton-menu {
     display: inline-block;
@@ -42,8 +47,8 @@ a {
     margin: 20px 0;
     background-color: #0044aa;
     padding: 10px;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 }
 .boton-menu:hover {
     background-color: #0022aa;
@@ -55,14 +60,17 @@ a {
 .buscador {
     background-color: #ffffff;
     border: none;
+    width: 90%;
+    box-sizing: border-box;
 }
 .contenedor-buscador {
     background-color: #ffffff;
     padding: 5px;
-    width: 50%;
+    width: 45%;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 .buscador-boton {
     width: fit-content;
@@ -106,11 +114,12 @@ a {
     justify-content: center;
 }
 .producto-imagen {
-    width: 90%;
+    width: 100%;
+    max-width: 300px;
 }
 .box-producto-imagen {
-    border-bottom: solid 1px #ebebeb;
     text-align: center;
+    border-bottom: solid 1px #ebebeb;
 }
 .box-producto {
     display: flex;
@@ -123,6 +132,11 @@ a {
     width: 90%;
     padding: 5px;
     position: relative;
+}
+.box-producto-link {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 .producto-precio {
     color: #000000;
@@ -137,8 +151,8 @@ a {
     border-radius: 15px;
     width: fit-content;
     position: absolute;
-    bottom: 25px;
-    left: 80%;
+    top: 295px;
+    right:15px;
 }
 .descuento {
     color: green;
@@ -150,9 +164,17 @@ a {
     display: none;
     color: #666;
 }
+.box-producto:hover .nombre-producto {
+    display: initial;
+}
+.box-producto:hover {
+    box-shadow: 0 0 10px rgb(100,100,100);
+
+}
 /* fin ultima visita  */
 
 /* diseño footer  */
+
 .pie-de-pagina {
     width: 90%;
     margin: auto;
@@ -173,4 +195,146 @@ a {
     font-size: 12px;
 
 }
+
 /* fin footer  */
+
+@media (min-width: 361px) {
+    /* diseño encabezado */
+    .logo {
+        width: 20%;
+    }
+    .barra-navegacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .boton-menu {
+        display: none;
+    }
+    .compra-en-cuotas {
+        display: inline-block;
+    }
+    .barra-superior-logo {
+        flex-wrap: nowrap;
+    }
+    .contenedor-buscador {
+        width: fit-content;
+    }
+    .buscador {
+        width: 250px;
+    }
+    .nav-element {
+        display: inline;
+        padding: 5px;
+        font-size: .9em;
+    }
+    .nav-link {
+        display: inline;
+        padding: 5px;
+        font-size: .9em;
+    }
+    .nav-lists {
+        min-width: 365px;
+        margin-left: 0;
+    }
+    .barra-navegacion {
+        margin-top: 25px;
+    }
+    /* fin encabezado  */
+
+    /* diseño banner  */
+    /* fin banner  */
+
+    /* diseño ofertas y ultima visita  */
+    .productos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+    .box-producto {
+        max-width: 300px;
+    }
+    /* fin ofertas  */
+
+    /* diseño footer  */
+    /* fin footer  */
+
+}
+
+@media (min-width: 768px) {
+    /* diseño encabezado */
+    .logo {
+        width: 15%;
+    }
+    .barra-navegacion {
+        width: 90%;
+        margin: auto;
+    }
+    .boton-menu {
+        display: none;
+    }
+    .compra-en-cuotas {
+        display: inline-block;
+    }
+    .barra-superior-logo {
+        flex-wrap: nowrap;
+    }
+    .contenedor-buscador {
+        width: fit-content;
+    }
+    .buscador {
+        width: 300px;
+    }
+    .nav-lists {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .nav-elements, .nav-links {
+        display: inline-block;
+    }
+    .nav-element {
+        display: inline;
+        padding: 5px;
+        margin-left: 0;
+    }
+    .nav-link {
+        display: inline;
+        padding: 5px;
+        margin-left: 0;
+    }
+    /* fin encabezado  */
+
+    /* diseño banner  */
+    /* fin banner  */
+
+    /* diseño ofertas y ultima visita  */
+    .productos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+    .fast-shipment {
+        transition: 0.3s linear;
+        transform-origin: 50% 50%;
+    }
+    .box-producto:hover .fast-shipment {
+        transform: rotate(-90deg);
+    }
+    /* fin ofertas  */
+
+    /* diseño footer  */
+    
+    .pie-articulos {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    /* fin footer  */
+
+}
